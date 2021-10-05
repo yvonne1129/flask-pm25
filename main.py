@@ -11,7 +11,9 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return 'Hello World!'
+    time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    return render_template('index.html',time=time)
 # GET取值
 
 # @app.route('/sum/x=<int:x>&y=<int:y>')
@@ -39,15 +41,7 @@ def stock():
     return render_template('stock.html', time=time, stocks=stocks)
 
 
-@app.route('/test')
-def test():
-    name = "jerry"
-    time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    # return render_template('index.html', **locals())
-    return render_template('index.html', data={
-        'name': name,
-        'time': time
-    })
+
 
 
 @app.route('/sum/x=<x>&y=<y>')
