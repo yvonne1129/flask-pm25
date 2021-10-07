@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(94, 91, 91);
+    text-align: center;
+    color: rgb(102, 3, 3);
+}
+
+
+
+
+
+#main {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-color:white ;
+}
