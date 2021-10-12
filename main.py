@@ -5,7 +5,7 @@ from flask.templating import render_template
 from scrape.pm25 import get_pm25
 import json
 
-#modify by remote
+# modify by local
 
 # __name__=main.py等於類別的初始執行__init__
 app = Flask(__name__)
